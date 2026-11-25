@@ -1,0 +1,5 @@
+.build/
+ClipSaver.xcodeproj/
+*.iconset/
+.DS_Store
+xcuserdata/

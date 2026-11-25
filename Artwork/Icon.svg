@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#7B8CFF"/>
+      <stop offset="1" stop-color="#3B4BD6"/>
+    </linearGradient>
+    <linearGradient id="clip" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B3556"/>
+      <stop offset="1" stop-color="#151B31"/>
+    </linearGradient>
+    <linearGradient id="folderFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D9E1FF"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3EDB6E"/>
+      <stop offset="1" stop-color="#1FA84A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- macOS squircle background -->
+  <rect x="112" y="112" width="800" height="800" rx="178" fill="url(#bg)"/>
+
+  <!-- video clip card sliding into the folder -->
+  <rect x="292" y="218" width="440" height="262" rx="34" fill="url(#clip)"/>
+  <g fill="#FFFFFF" opacity="0.30">
+    <rect x="314" y="246" width="22" height="30" rx="6"/>
+    <rect x="314" y="298" width="22" height="30" rx="6"/>
+    <rect x="314" y="350" width="22" height="30" rx="6"/>
+    <rect x="314" y="402" width="22" height="30" rx="6"/>
+    <rect x="688" y="246" width="22" height="30" rx="6"/>
+    <rect x="688" y="298" width="22" height="30" rx="6"/>
+    <rect x="688" y="350" width="22" height="30" rx="6"/>
+    <rect x="688" y="402" width="22" height="30" rx="6"/>
+  </g>
+  <path d="M480 296 L480 402 L572 349 Z" fill="#FFFFFF"/>
+
+  <!-- folder -->
+  <rect x="236" y="352" width="204" height="72" rx="30" fill="#B9C4F2"/>
+  <rect x="212" y="392" width="600" height="132" rx="38" fill="#B9C4F2"/>
+  <rect x="212" y="452" width="600" height="312" rx="48" fill="url(#folderFront)"/>
+  <rect x="228" y="464" width="568" height="6" rx="3" fill="#C9D2F4"/>
+
+  <!-- download badge -->
+  <circle cx="758" cy="698" r="106" fill="url(#badge)" stroke="#FFFFFF" stroke-width="12"/>
+  <path d="M758 656 V726 M716 690 L758 734 L800 690" stroke="#FFFFFF" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
