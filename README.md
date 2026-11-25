@@ -1,5 +1,7 @@
 # ClipSaver
 
+[![Release](https://github.com/joaodforce/ClipSaver/actions/workflows/release.yml/badge.svg)](https://github.com/joaodforce/ClipSaver/releases)
+
 <p align="center"><img src="Artwork/Icon.svg" width="128" alt="ClipSaver icon"></p>
 
 Save shared files to any folder, straight from the macOS share sheet.
@@ -14,6 +16,21 @@ ClipSaver exists because **Home.app's clip sharing has no "save to disk"** — s
 - Files are copied there, keeping the sender's filename (e.g. Home's `Camera-Name_YYYY-MM-DD_HH-MM-SS.mp4`)
 
 ## Install
+
+### Prebuilt
+
+Grab `ClipSaver-*.zip` from [Releases](https://github.com/joaodforce/ClipSaver/releases), unzip, move `ClipSaver.app` to `/Applications`, then:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/ClipSaver.app
+pluginkit -a /Applications/ClipSaver.app/Contents/PlugIns/ClipSaverShare.appex
+open /Applications/ClipSaver.app   # launch once to register the extension
+```
+
+> The app is ad-hoc signed, so macOS will report it as "damaged" until
+> quarantine is stripped — the `xattr` line above does that.
+
+### From source
 
 Requirements: Xcode + [XcodeGen](https://github.com/yonaskolb/XcodeGen) (`brew install xcodegen`)
 
